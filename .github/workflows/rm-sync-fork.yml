@@ -27,6 +27,7 @@ jobs:
         with:
           ref: up
           fetch-depth: 0
+          token: ${{ secrets.WORKFLOW_TOKEN }}
 
       - name: Add upstream remote and merge changes
         id: sync
